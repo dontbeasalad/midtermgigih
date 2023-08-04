@@ -77,19 +77,34 @@ Return all videos from databases.
 {
   result : [
     {
-      video_id,
-      thumbnail,
-      shop_name,
-      video_title,
-      product : [
-        {
-          nama_produk,
-          harga_produk,
-          thumbnail_produk,
-          link_produk
-        }
-      ]
-    }
+        video_id: {
+            type: String,
+            required: true
+        },
+        thumbnail: {
+            type: String,
+            required: true
+        },
+
+        Product: [{
+            product_id: {
+                type: String,
+                required: true
+            },
+            product_name: {
+                type: String,
+                required: true
+            },
+            price: {
+                type: Number,
+                required: true
+            },
+            product_thumbnail: {
+                type: String,
+                required: true
+            },
+        }]
+    },
   ]
 }
 ```
@@ -121,7 +136,7 @@ Return all comment from databases.
 ```
 
 
-### POST /tokplay/comment/post
+### POST /product/post
 
 ----
 Creates a new Products and returns the new object.
