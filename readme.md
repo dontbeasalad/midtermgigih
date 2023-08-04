@@ -3,8 +3,7 @@
 ## Table Of Content
 
 * [Database Structure](#database-structure)
-	* [Videos Collection](#videos-collection)
-	* [Comment Collection](#comment-collection)
+	* [Product Collection](#product-collection)
 * [API Structure](#api-structure)
 * [API Request Response](#api-request-response)
 * [How To Run](#how-to-run-in-local)
